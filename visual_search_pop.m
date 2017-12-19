@@ -1,4 +1,4 @@
-function [raw_m, correct_m] = visual_search(stim, trials)
+function [raw_m, correct_m] = visual_search_pop(stim, trials)
 
 if nargin == 1
     trials = 40;
@@ -14,8 +14,8 @@ for n = 1:trials     %This loop will generate the trials for each condition
         X = text(rand(1,1), rand(1,1), 'X', 'Color', 'b', 'FontSize', 12);
     end
     target_chance = rand(1,1);   %A random number between 0 and 1 is generated,
-    if target_chance < 0.5       %if it-s lower than 0.5, the last printed 'X'
-        set(X, 'Color', 'k')     %is turned black
+    if target_chance < 0.5       %if it-s lower than 0.5, the last printed 'O'
+        set(O, 'Color', 'k')     %is turned black, becoming a target
         raw_m(n,2) = 1;          
     end
     tic
