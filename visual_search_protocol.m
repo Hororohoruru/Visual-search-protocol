@@ -3,7 +3,7 @@ close all
 
 h = figure('Color', 'w', 'ToolBar', 'none', 'MenuBar', 'none');
 
-%%Start of pop search
+%Start of pop search
 
 init_inst
 
@@ -27,7 +27,7 @@ init_cross(5)
 init_cross(5)
 [raw_16_pop, correct_16_pop] = visual_search_pop(16);
 
-%%Start of conjunction search
+%Start of conjunction search
 
 conj_inst
 
