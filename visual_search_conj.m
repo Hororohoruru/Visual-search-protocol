@@ -1,11 +1,10 @@
-function [raw_m, correct_m] = visual_search_conj(stim, trials)
+function correct_m = visual_search_conj(stim, trials)
 
 if nargin == 1
     trials = 40;
 end
 
-raw_m = zeros(trials, 2);
-correct_m = zeros(trials, 2);
+correct_m = zeros(trials, 4);
 
 for n = 1:trials     
     axis off
@@ -20,12 +19,12 @@ for n = 1:trials
     target_chance = rand(1,1);   
     if target_chance < 0.5       
         set(O, 'Color', 'k')     
-        raw_m(n,2) = 1;          
+        correct_m(n,1) = 1;          
     end
     tic
     pause
     answer = get(gcf, 'CurrentCharacter');
-    correct_m(n,2) = toc;        
+    correct_m(n,4) = toc;        
     if answer == 's'
         answer = 1;
     elseif answer == 'l'
@@ -33,9 +32,9 @@ for n = 1:trials
     else                         
         answer = 2;              
     end                          
-    raw_m(n,1) = answer;         
-    if raw_m(n,1) == raw_m(n,2)  
-        correct_m(n,1) = 1;
+    correct_m(n,2) = answer;         
+    if correct_m(n,1) == correct_m(n,2)  
+        correct_m(n,3) = 1;
     end
     delete(gca)
 end
