@@ -25,12 +25,12 @@ Each block is composed by 40 trials by default, the functions that carry
 out the experiment admit a second imput argument to determine the number of
 trials. 
 
-For the data collection, the matrix called 'raw_number' collects the participant's
-answer in its first column. If there is a target in the corresponding trial, the 
-second column digit will be '1', and be left with the default '0' otherwise.
+For the data collection, the matrix called 'correct_number' collects the participant's
+answer in its second column. If there is a target in the corresponding trial, the 
+first column digit will be '1', and be left with the default '0' otherwise.
 
-After collecting the data corresponding to the 40 trials, the two columns
-of the raw matrix will be compared, and if their values are equal, it will
-be considered a correct answer. Then, the matrix 'correct_number' will get
-a value of '1' in the corresponding trial if the answer is correct, while
-the second column will collect the reaction times of each trial.
+After collecting the data corresponding to the 40 trials, the two first 
+columns of the matrix will be compared, and if their values are equal, it will
+be considered a correct answer. Then, the third column will get a value of '1' 
+in the corresponding trial if the answer is correct, while the fourth column 
+will collect the reaction times of each trial.
