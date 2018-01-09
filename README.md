@@ -39,6 +39,10 @@ Lastly, the folder 'data_analysis' contains a function that takes the resulting 
 from the experiment, and creates two row vectors containing the mean reaction times for
 the different stimuli conditions (it uses data from correct answers only), separating 
 them between the trials with target present and the ones with target absent. Additionally,
-the script named 'average' will run the function twice in order to obtain mean reaction
+the script named 'averages' will run the function twice in order to obtain mean reaction
 times for all 4 conditions, for both target present and absent, for both pop and conjunction
 search.
+
+The script named ´correlations´ will calculate and display the Pearson's correlation coefficient
+between the averages and the set size (default to 4, 8, 12 and 16), as well as the significance
+values (p) for each one of them.
