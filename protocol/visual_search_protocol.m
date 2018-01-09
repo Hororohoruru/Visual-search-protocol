@@ -3,52 +3,52 @@ close all
 
 h = figure('Color', 'w', 'ToolBar', 'none', 'MenuBar', 'none');
 
-%%Start of pop search
+%Start of pop search
 
 init_inst
 
 %4 stimuli per trial (pop)
 
 init_cross(5)
-correct_4_pop = visual_search_pop(4);
+pop_4 = visual_search_pop(4);
 
 %8 stimuli per trial (pop)
 
 init_cross(5)
-correct_8_pop = visual_search_pop(8);
+pop_8 = visual_search_pop(8);
 
 %12 stimuli per trial (pop)
 
 init_cross(5)
-correct_12_pop = visual_search_pop(12);
+pop_12 = visual_search_pop(12);
 
 %16 stimuli per trial (pop)
 
 init_cross(5)
-correct_16_pop = visual_search_pop(16);
+pop_16 = visual_search_pop(16);
 
-%%Start of conjunction search
+%Start of conjunction search
 
 conj_inst
 
 %4 stimuli per trial (conj)
 
 init_cross(5)
-correct_4_conj = visual_search_conj(4);
+conj_4 = visual_search_conj(4);
 
 %8 stimuli per trial (conj)
 
 init_cross(5)
-correct_8_conj = visual_search_conj(8);
+conj_8 = visual_search_conj(8);
 
 %12 stimuli per trial (conj)
 
 init_cross(5)
-correct_12_conj = visual_search_conj(12);
+conj_12 = visual_search_conj(12);
 
 %16 stimuli per trial (conj)
 
 init_cross(5)
-correct_16_conj = visual_search_conj(12);
+conj_16 = visual_search_conj(16);
 
 close all
