@@ -34,3 +34,11 @@ columns of the matrix will be compared, and if their values are equal, it will
 be considered a correct answer. Then, the third column will get a value of '1' 
 in the corresponding trial if the answer is correct, while the fourth column 
 will collect the reaction times of each trial.
+
+Lastly, the folder 'data_analysis' contains a function that takes the resulting matrices
+from the experiment, and creates two row vectors containing the mean reaction times for
+the different stimuli conditions (it uses data from correct answers only), separating 
+them between the trials with target present and the ones with target absent. Additionally,
+the script named 'average' will run the function twice in order to obtain mean reaction
+times for all 4 conditions, for both target present and absent, for both pop and conjunction
+search.
