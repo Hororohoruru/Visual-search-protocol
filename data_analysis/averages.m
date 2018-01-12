@@ -3,3 +3,6 @@
 
 %Average reaction times for conjunction search
 [avg_1_conj, avg_0_conj] = rt_average(conj_4, conj_8, conj_12, conj_16);
+
+%Plot the results
+plots
