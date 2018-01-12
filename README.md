@@ -41,7 +41,7 @@ the different stimuli conditions (it uses data from correct answers only), separ
 them between the trials with target present and the ones with target absent. Additionally,
 the script named 'averages' will run the function twice in order to obtain mean reaction
 times for all 4 conditions, for both target present and absent, for both pop and conjunction
-search.
+search. It will also plot the results into two separated subplots.
 
 The script named ´correlations´ will calculate and display the Pearson's correlation coefficient
 between the averages and the set size (default to 4, 8, 12 and 16), as well as the significance
